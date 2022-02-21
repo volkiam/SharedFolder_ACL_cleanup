@@ -55,8 +55,7 @@ ForEach ($item in $items)
                      $User = (($item.IdentityReference).tostring().Split("\"))[1]
                      $UserFind = get-aduser -Identity $user -Server $dc_server
                      if ($UserFind.Enabled) {$Enabled = "true"}
-                     else {$Enabled = "false"}
-
+                     else {$Enabled = "false"}  
                 }
             catch
                 {}
