@@ -1,0 +1,11 @@
+root = true
+
+[*]
+charset = utf-8
+# indent_size intentionally not specified in this section
+indent_style = space
+insert_final_newline = true
+
+# Source code
+[*.{cs,ps1,psd1,psm1}]
+indent_size = 4
